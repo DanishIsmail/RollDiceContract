@@ -1,0 +1,57 @@
+{
+	"emulators": {
+		"default": {
+			"port": 3569,
+			"serviceAccount": "emulator-account"
+		}
+	},
+	"contracts": {
+		"RollDice": "./contracts/RollDice.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "9e667601a39a0536eb5a934c466208a81937b3220e50df081d16c4122bd95798"
+		},
+		"RollDiceContract": {
+			"address": "0x2736da6a6526d0de",
+			"key": {
+			  "type": "hex",
+			  "index": 0,
+			  "signatureAlgorithm": "ECDSA_secp256k1",
+			  "hashAlgorithm": "SHA3_256",
+			  "privateKey": "3ab4e82a98c920bdc59cbb8730065b93fc006eb853fd1ef41d5e1fe3c04bf8d3"
+			}
+		},
+		"userOne-account": {
+			"address": "0x23c68575baf1b8e2",
+			"key": {
+			  "type": "hex",
+			  "index": 0,
+			  "signatureAlgorithm": "ECDSA_secp256k1",
+			  "hashAlgorithm": "SHA3_256",
+			  "privateKey": "44a7ff43cc8b45bdfe4eb17cc88443564d2d160866aef98e6fe4ef718a3179a5"
+			}
+		},
+		"userTwo-account": {
+			"address": "0xd1f5599b320fb25c",
+			"key": {
+			  "type": "hex",
+			  "index": 0,
+			  "signatureAlgorithm": "ECDSA_secp256k1",
+			  "hashAlgorithm": "SHA3_256",
+			  "privateKey": "413bab44cd1282a75fd7c662fff6d4352ae11c76ce05afc91b2c1edeed9a3355"
+			}
+		}
+	},
+	"deployments": {
+		"testnet": {
+			"RollDiceContract" : ["RollDice"]
+		}
+	}
+}
